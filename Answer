@@ -1,0 +1,58 @@
+5.5: The four basic elements of counter-controlled iteration
+A control variable 
+An initial value for the counter, such as int counter = 1.
+An increment or decrement, which changes the counter each time through the loop, such as counter++.
+A loop-continuation condition, which decides whether to keep looping, such as counter <= 10.
+
+5.6: while versus for
+A for loop puts the start value, condition and increment together on one line, which suits counting a known number of times.
+A while loop only has the condition, with the start value before the loop and the update inside the body, which suits repeating until something happens, like a sentinel value.
+
+5.7: At least once: do…while or while?
+do…while runs the body first and checks the condition afterwards, so the body always runs at least once. 
+A while loop checks first, so it might not run at all.
+
+5.8: break versus continue
+break exits the loop completely, and the program continues with the first statement after the loop. It can also end a switch.
+continue skips only the rest of the current pass. The loop then moves on to the next pass. In a for loop, the increment still runs.
+
+a) while (i = 1; i <= 10, i++)
+System.out.println(i);
+
+b) if (value < 0){
+System.out.println("Negative");
+}else if (value == o){
+System.out.println("Zero");
+
+c) for (int i = 19; i > 1; i--)
+System.out.println(i);
+
+d) int counter = 0;
+do {
+System.out.println(counter + 1);
+counter += 2;
+} while (counter <= 51)
+
+
+i = 2 , j = 3 , k = 2 and m = 2 .
+
+a) System.out.println(i == 2);
+2 == 2 True
+
+b) System.out.println(j == 5);
+3 == 5 False
+
+c) System.out.println((i >= 0) && (j <= 3));
+2 >= 0 and 3 <= 3 True
+
+d) System.out.println((m <= 100) & (k <= m));
+2 <= 100 & 2 <= 2 True
+
+e) System.out.println((j >= i) || (k != m));
+3 >= 2 or 2 != 2 True
+
+f) System.out.println((k + i < j) | (4 - j >= k));
+2+2 < 3 | 4 - 2 >= 2 False
+
+g) System.out.println(!(k > j))
+(!(2 > 3)) True
